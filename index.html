@@ -1,20 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WhatTritonEats</title>
-        <link rel="stylesheet" href="styles.css" type=”text/css”/>
-        <link rel="icon" href="" type="image/x-icon" />
-        <script type="text/javascript" src="script.js"></script>
-    </head>
 
-    <body>
-        <!-- Add HTML markup elements for your web site below -->
-        <h1>Welcome to Project Title!</h1>
-        <p>Here are some more details.</p>
-    </body>
-    <footer>
-        <p>Made by: WIC &hearts;</p>
-    </footer>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TritonEats</title>
+    <link rel="stylesheet" href="styles.css" type=”text/css”/>
+    <link rel="icon" href="" type="image/x-icon" />
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav>
+    <h2>TritonEats</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#dining-halls">Dining Halls</a></li>
+      <li><a href="#ratings">Ratings</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+</nav>
+
+
+  <!-- ================= HEADER / HERO SECTION ================= -->
+  <header id="home" class="header-container">
+
+    <!-- Add your own header image here -->
+    <img src="img/images.jpeg" alt="UCSD Dining Hall Header Image" class="header-item" />
+
+    <h1 class="header-item">TritonEats</h1>
+
+    <!-- <h3 class="header-item">
+      Rate, review, and discover UCSD dining hall food.
+    </h3> -->
+
+    <!-- <a href="#dining-halls" class="header-button">
+      Explore Dining Halls
+    </a>
+
+    <a href="#ratings" class="header-button">
+      Submit a Rating
+    </a> -->
+
+  </header>
+
+
+  <!-- ================= ABOUT SECTION ================= -->
+  <section id="about">
+    <h2>About TritonEats</h2>
+
+    <p>
+      TritonEats is a website designed to help Tritons explore campus 
+      dining halls. UCSD has many dining halls across campus, but it can be hard
+       to know which location has the best meals, restaurants, or menu items.
+    </p>
+
+    <p>
+      This website organizes UCSD dining halls by location, shows the restaurants
+      inside each dining hall, and provides descriptions and images of different
+      dishes. Tritons can also rate meals based on taste, value, appearance, and
+      overall experience.
+    </p>
+
+    <p>
+      By collecting student ratings, TritonEats helps Tritons make better dining
+      choices and gives a clearer picture of which foods are most popular across
+      campus.
+    </p>
+  </section>
+
+
+  <!-- ================= DINING HALLS SECTION ================= -->
+  <section id="dining-halls">
+    <h2>UCSD Dining Halls</h2>
+
+    <p>
+      Browse the nine UCSD dining halls below. Each card includes the dining hall
+      location, restaurants inside, sample dishes, and a rating feature.
+    </p>
+
+
+    <!-- ========== DINING HALL 1 ========== -->
+    <article class="dining-hall-card">
+      <h3>64 Degrees</h3>
+      <p>
+        <strong>Location:</strong>
+        <a href="https://www.google.com/maps/place/64+Degrees/@32.8747459,-117.244609,17z/data=!3m1!4b1!4m6!3m5!1s0x80dc06c7b8154acf:0x51e8bb9f09bfd68!8m2!3d32.8747459!4d-117.2420341!16s%2Fg%2F1tcy4ltl?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D"
+           target="_blank">
+           64 Degrees - Revelle College
+        </a>
+      </p>
+
+      <img src="img/64 2.jpg" alt="64 Degrees Dining Hall Image" class="dining-hall-image" />
+
+      <h4>Restaurants inside 64 Degrees</h4>
+
+      <div class="restaurant-card">
+        <h5>64 Triton Grill</h5>
+        <p>
+          (short description here) Fast Food like burgers, fries and nice ice-cream!
+        </p>
+
+        <div class="dish-card">
+        <h6>Combo</h6>
+          <h7> Black Bean Burger Combo</h7>
+          <img src="" alt="Dish image" class="dish-image" />
+          <p>
+            Chipotle black bean, lettuce, tomato pickle, tangy burger sauce + fries + fountain drink
+          </p>
+
+          <label for="dish1-rating">Rate this dish:</label>
+          <select id="dish1-rating" name="dish1-rating">
+            <option value="">Choose a rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Okay</option>
+            <option value="2">2 - Not great</option>
+            <option value="1">1 - Poor</option>
+          </select>
+
+          <button type="button">Submit Rating</button>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- ========== DINING HALL 2 ========== -->
+    <article class="dining-hall-card">
+      <h3>Café Ventanas</h3>
+      <p><strong>Location:</strong> Eleanor Roosevelt College</p>
+
+      <img src="" alt="Café Ventanas Dining Hall Image" class="dining-hall-image" />
+
+      <h4>Restaurants inside Café Ventanas</h4>
+
+      <div class="restaurant-card">
+        <h5>Restaurant Name Here</h5>
+        <p>
+          Add a short description of this restaurant or food station.
+        </p>
+
+        <div class="dish-card">
+          <h6>Dish Name Here</h6>
+          <img src="" alt="Dish image" class="dish-image" />
+          <p>
+            Add the dish description here.
+          </p>
+
+          <label for="dish2-rating">Rate this dish:</label>
+          <select id="dish2-rating" name="dish2-rating">
+            <option value="">Choose a rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Okay</option>
+            <option value="2">2 - Not great</option>
+            <option value="1">1 - Poor</option>
+          </select>
+
+          <button type="button">Submit Rating</button>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- ========== DINING HALL 3 ========== -->
+    <article class="dining-hall-card">
+      <h3>OceanView</h3>
+      <p><strong>Location:</strong> Marshall College</p>
+
+      <img src="" alt="OceanView Dining Hall Image" class="dining-hall-image" />
+
+      <h4>Restaurants inside OceanView</h4>
+
+      <div class="restaurant-card">
+        <h5>Restaurant Name Here</h5>
+        <p>
+          Add a short description of this restaurant or food station.
+        </p>
+
+        <div class="dish-card">
+          <h6>Dish Name Here</h6>
+          <img src="" alt="Dish image" class="dish-image" />
+          <p>
+            Add the dish description here.
+          </p>
+
+          <label for="dish3-rating">Rate this dish:</label>
+          <select id="dish3-rating" name="dish3-rating">
+            <option value="">Choose a rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Okay</option>
+            <option value="2">2 - Not great</option>
+            <option value="1">1 - Poor</option>
+          </select>
+
+          <button type="button">Submit Rating</button>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- ========== DINING HALL 4 ========== -->
+    <article class="dining-hall-card">
+      <h3>Foodworx</h3>
+      <p><strong>Location:</strong> Sixth College / Pepper Canyon area</p>
+
+      <img src="" alt="Foodworx Dining Hall Image" class="dining-hall-image" />
+
+      <h4>Restaurants inside Foodworx</h4>
+
+      <div class="restaurant-card">
+        <h5>Restaurant Name Here</h5>
+        <p>
+          Add a short description of this restaurant or food station.
+        </p>
+
+        <div class="dish-card">
+          <h6>Dish Name Here</h6>
+          <img src="" alt="Dish image" class="dish-image" />
+          <p>
+            Add the dish description here.
+          </p>
+
+          <label for="dish4-rating">Rate this dish:</label>
+          <select id="dish4-rating" name="dish4-rating">
+            <option value="">Choose a rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Okay</option>
+            <option value="2">2 - Not great</option>
+            <option value="1">1 - Poor</option>
+          </select>
+
+          <button type="button">Submit Rating</button>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- ========== DINING HALL 5 ========== -->
+    <article class="dining-hall-card">
+      <h3>Pines</h3>
+      <p><strong>Location:</strong> Muir College</p>
+
+      <img src="" alt="Pines Dining Hall Image" class="dining-hall-image" />
+
+      <h4>Restaurants inside Pines</h4>
+
+      <div class="restaurant-card">
+        <h5>Restaurant Name Here</h5>
+        <p>
+          Add a short description of this restaurant or food station.
+        </p>
+
+        <div class="dish-card">
+          <h6>Dish Name Here</h6>
+          <img src="" alt="Dish image" class="dish-image" />
+          <p>
+            Add the dish description here.
+          </p>
+
+          <label for="dish5-rating">Rate this dish:</label>
+          <select id="dish5-rating" name="dish5-rating">
+            <option value="">Choose a rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Okay</option>
+            <option value="2">2 - Not great</option>
+            <option value="1">1 - Poor</option>
+          </select>
+
+          <button type="button">Submit Rating</button>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- ========== DINING HALL 6 ========== -->
+    <article class="dining-hall-card">
+      <h3>Roots</h3>
+      <p><strong>Location:</strong> Muir College</p>
+
+      <img src="" alt="Roots Dining Hall Image" class="dining-hall-image" />
+
+      <h4>Restaurants inside Roots</h4>
+
+      <div class="restaurant-card">
+        <h5>Restaurant Name Here</h5>
+        <p>
+          Add a short description of this restaurant or food station.
+        </p>
+
+        <div class="dish-card">
+          <h6>Dish Name Here</h6>
+          <img src="" alt="Dish image" class="dish-image" />
+          <p>
+            Add the dish description here.
+          </p>
+
+          <label for="dish6-rating">Rate this dish:</label>
+          <select id="dish6-rating" name="dish6-rating">
+            <option value="">Choose a rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Okay</option>
+            <option value="2">2 - Not great</option>
+            <option value="1">1 - Poor</option>
+          </select>
+
+          <button type="button">Submit Rating</button>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- ========== DINING HALL 7 ========== -->
+    <article class="dining-hall-card">
+      <h3>Seventh Market</h3>
+      <p><strong>Location:</strong> Seventh College</p>
+
+      <img src="" alt="Seventh Market Dining Hall Image" class="dining-hall-image" />
+
+      <h4>Restaurants inside Seventh Market</h4>
+
+      <div class="restaurant-card">
+        <h5>Restaurant Name Here</h5>
+        <p>
+          Add a short description of this restaurant or food station.
+        </p>
+
+        <div class="dish-card">
+          <h6>Dish Name Here</h6>
+          <img src="" alt="Dish image" class="dish-image" />
+          <p>
+            Add the dish description here.
+          </p>
+
+          <label for="dish7-rating">Rate this dish:</label>
+          <select id="dish7-rating" name="dish7-rating">
+            <option value="">Choose a rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Okay</option>
+            <option value="2">2 - Not great</option>
+            <option value="1">1 - Poor</option>
+          </select>
+
+          <button type="button">Submit Rating</button>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- ========== DINING HALL 8 ========== -->
+    <article class="dining-hall-card">
+      <h3>The Bistro</h3>
+      <p><strong>Location:</strong> Sixth College / North Torrey Pines Living Learning Neighborhood</p>
+
+      <img src="" alt="The Bistro Dining Hall Image" class="dining-hall-image" />
+
+      <h4>Restaurants inside The Bistro</h4>
+
+      <div class="restaurant-card">
+        <h5>Restaurant Name Here</h5>
+        <p>
+          Add a short description of this restaurant or food station.
+        </p>
+
+        <div class="dish-card">
+          <h6>Dish Name Here</h6>
+          <img src="" alt="Dish image" class="dish-image" />
+          <p>
+            Add the dish description here.
+          </p>
+
+          <label for="dish8-rating">Rate this dish:</label>
+          <select id="dish8-rating" name="dish8-rating">
+            <option value="">Choose a rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Okay</option>
+            <option value="2">2 - Not great</option>
+            <option value="1">1 - Poor</option>
+          </select>
+
+          <button type="button">Submit Rating</button>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- ========== DINING HALL 9 ========== -->
+    <article class="dining-hall-card">
+      <h3>Sixth Market</h3>
+      <p><strong>Location:</strong> Sixth College</p>
+
+      <img src="" alt="Sixth Market Dining Hall Image" class="dining-hall-image" />
+
+      <h4>Restaurants inside Sixth Market</h4>
+
+      <div class="restaurant-card">
+        <h5>Restaurant Name Here</h5>
+        <p>
+          Add a short description of this restaurant or food station.
+        </p>
+
+        <div class="dish-card">
+          <h6>Dish Name Here</h6>
+          <img src="" alt="Dish image" class="dish-image" />
+          <p>
+            Add the dish description here.
+          </p>
+
+          <label for="dish9-rating">Rate this dish:</label>
+          <select id="dish9-rating" name="dish9-rating">
+            <option value="">Choose a rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Okay</option>
+            <option value="2">2 - Not great</option>
+            <option value="1">1 - Poor</option>
+          </select>
+
+          <button type="button">Submit Rating</button>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+
+  <!-- ================= RATINGS SECTION ================= -->
+  <section id="ratings">
+    <h2>Submit Your Food Rating</h2>
+
+    <p>
+      Use this form to rate a dining hall, restaurant, or specific dish. This
+      version is a front-end demo, so the form will not save data unless you add
+      JavaScript or a backend later.
+    </p>
+
+    <form>
+      <label for="dining-hall-choice">Dining Hall:</label>
+      <select id="dining-hall-choice" name="dining-hall-choice">
+        <option value="">Choose a dining hall</option>
+        <option value="64-degrees">64 Degrees</option>
+        <option value="cafe-ventanas">Café Ventanas</option>
+        <option value="oceanview">OceanView</option>
+        <option value="foodworx">Foodworx</option>
+        <option value="pines">Pines</option>
+        <option value="roots">Roots</option>
+        <option value="seventh-market">Seventh Market</option>
+        <option value="the-bistro">The Bistro</option>
+        <option value="sixth-market">Sixth Market</option>
+      </select>
+
+      <br /><br />
+
+      <label for="restaurant-name">Restaurant or Station:</label>
+      <input
+        type="text"
+        id="restaurant-name"
+        name="restaurant-name"
+        placeholder="Example: Grill, Noodles, Cafe, Market"
+      />
+
+      <br /><br />
+
+      <label for="dish-name">Dish Name:</label>
+      <input
+        type="text"
+        id="dish-name"
+        name="dish-name"
+        placeholder="Example: Chicken Bowl"
+      />
+
+      <br /><br />
+
+      <label for="overall-rating">Overall Rating:</label>
+      <select id="overall-rating" name="overall-rating">
+        <option value="">Choose a rating</option>
+        <option value="5">5 - Excellent</option>
+        <option value="4">4 - Good</option>
+        <option value="3">3 - Okay</option>
+        <option value="2">2 - Not great</option>
+        <option value="1">1 - Poor</option>
+      </select>
+
+      <br /><br />
+
+      <label for="review-text">Review:</label>
+      <br />
+      <textarea
+        id="review-text"
+        name="review-text"
+        rows="5"
+        cols="40"
+        placeholder="Write your thoughts about the food here..."
+      ></textarea>
+
+      <br /><br />
+
+      <button type="submit">Submit Review</button>
+    </form>
+  </section>
+
+
+  <!-- ================= POPULAR DISHES / DATA SECTION ================= -->
+  <section id="popular-dishes">
+    <h2>Popular Triton Picks</h2>
+
+    <p>
+      This section can show top-rated dishes after you collect ratings from users.
+      For now, you can manually add popular meals or sample data.
+    </p>
+
+    <ul>
+      <li>Best Overall Dish: Add dish name here</li>
+      <li>Best Value Meal: Add dish name here</li>
+      <li>Best Vegetarian Option: Add dish name here</li>
+      <li>Most Convenient Dining Hall: Add dining hall here</li>
+      <li>Highest Rated Restaurant: Add restaurant here</li>
+    </ul>
+  </section>
+
+
+  <!-- ================= ADDITIONAL RESOURCES ================= -->
+  <section id="resources">
+    <h2>Additional Resources</h2>
+
+    <p>
+      Learn more about UCSD dining locations, hours, and menus through official
+      campus dining resources.
+    </p>
+
+    <a href="https://hdhdining.ucsd.edu/" target="_blank">
+      Visit UCSD HDH Dining
+    </a>
+  </section>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>
+      TritonTaste | A student project for Engineering for Tritons
+    </p>
+  </footer>
+
+</body>
+
 </html>
