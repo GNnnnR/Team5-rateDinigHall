@@ -12,27 +12,25 @@
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
-<nav>
-    <h2>TritonEats</h2>
-    <ul>
-      <!-- <li><a href="#home">Home</a></li> -->
-      <li><a href="#about">About US</a></li>
-      <li><a href="#dining-halls">UCSD Dining Halls</a></li>
-      <li><a href="#ratings">Want to rate the dishes?</a></li>
-      <li><a href="#popular-dishes">TOP PICK</a></li>
-      <li><a href="#resources">Some else you might want to know</a></li>
-    </ul>
-</nav>
-
 
   <!-- ================= HEADER / HERO SECTION ================= -->
   <header id="home" class="header-container">
 
+    <h1 class="header-item">TritonEats</h1>
     <!-- Add your own header image here -->
     <img src="img/images.jpeg" alt="UCSD Dining Hall Header Image" class="header-item" />
 
-    <h1 class="header-item">TritonEats</h1>
+    <!-- ================= NAVBAR ================= -->
+  <nav>
+      <ul>
+        <!-- <li><a href="#home">Home</a></li> -->
+        <li><a href="#about">About US</a></li>
+        <li><a href="#dining-halls">UCSD Dining Halls</a></li>
+        <li><a href="#ratings">Rate Dishes</a></li>
+        <li><a href="#popular-dishes">Top Pick</a></li>
+        <li><a href="#resources">Some else you might want to know</a></li>
+      </ul>
+  </nav>
 
     <!-- <h3 class="header-item">
       Rate, review, and discover UCSD dining hall food.
@@ -87,44 +85,145 @@
     <!-- ========== DINING HALL 1 ========== -->
     <article class="dining-hall-card">
       <h3>64 Degrees</h3>
+
       <p>
         <strong>Location:</strong>
-        <a href="https://www.google.com/maps/place/64+Degrees/@32.8747459,-117.244609,17z/data=!3m1!4b1!4m6!3m5!1s0x80dc06c7b8154acf:0x51e8bb9f09bfd68!8m2!3d32.8747459!4d-117.2420341!16s%2Fg%2F1tcy4ltl?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D"
-           target="_blank">
-           64 Degrees - Revelle College
+        <a
+          href="https://www.google.com/maps/place/64+Degrees/@32.8747459,-117.244609,17z/data=!3m1!4b1!4m6!3m5!1s0x80dc06c7b8154acf:0x51e8bb9f09bfd68!8m2!3d32.8747459!4d-117.2420341!16s%2Fg%2F1tcy4ltl?entry=ttu&g_ep=EgoyMDI2MDUwMi4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+        >
+          64 Degrees - Revelle College
         </a>
       </p>
 
-      <img src="img/64 2.jpg" alt="64 Degrees Dining Hall Image" class="dining-hall-image" />
+      <img
+        src="img/64 2.jpg"
+        alt="64 Degrees Dining Hall Image"
+        class="dining-hall-image"
+      />
 
-      <h4>Restaurants inside 64 Degrees</h4>
+      <p>
+        <a href="https://hdh-web.ucsd.edu/dining/apps/diningservices/Restaurants/Venue_V3?locId=64&locDetID=18&dayNum=0"
+           target="_blank">View Today's Menu</a>
+      </p>
 
       <div class="restaurant-card">
-        <h5>64 Triton Grill</h5>
+        <h4>64 Triton Grill</h4>
         <p>
-          (short description here) Fast Food like burgers, fries and nice ice-cream!
+          Fast food like burgers, fries, and nice ice cream!
         </p>
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFRSqHPif7L3fiGDk6Sw3VRiMuvuHQ7V_t8dnlqXxrk9i0TVRGGQHsclvN3vbXbEgHNs9eHuFrLTL6tJfUaSL3NU5Wk39A8NIlsV_eZ2hLXXb_sGPo_ArlB7MiwY18Wh_JalIdLkXzLOPQ1=s1360-w1360-h1020-rw"
+             alt="Triton Grill at 64 Degree" class="dining-hall-image" />
+      
+        <label for="triton-grill-rating">Rate this restaurant:</label>
+        <select id="triton-grill-rating" name="triton-grill-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
 
-        <div class="dish-card">
-        <h6>Combo</h6>
-          <h7> Black Bean Burger Combo</h7>
-          <img src="" alt="Dish image" class="dish-image" />
-          <p>
-            Chipotle black bean, lettuce, tomato pickle, tangy burger sauce + fries + fountain drink
-          </p>
+        <button type="button">Submit Rating</button>
+      </div>
 
-          <label for="dish1-rating">Rate this dish:</label>
-          <select id="dish1-rating" name="dish1-rating">
-            <option value="">Choose a rating</option>
-            <option value="5">5 - Excellent</option>
-            <option value="4">4 - Good</option>
-            <option value="3">3 - Okay</option>
-            <option value="2">2 - Not great</option>
-            <option value="1">1 - Poor</option>
-          </select>
+      <div class="restaurant-card">
+        <h4>Wok</h4>
+        <p>Asian taste! We change menus every week.</p>
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAH4IOVwXW29GW5cz4LJ2NjHwE3qdqMTx4C1CzEfutJGLsGOkuRuDO-i6DKehEBkAsmsZ7nnu6WtIblCedYTTLAi7ntllyn34gxIrQS3Owh_z_aP6zsKqasKYATRYk2-C-XD7hj33WC0b7ru=s1360-w1360-h1020-rw“
+             alt="Triton Grill at 64 Degree” class="dining-hall-image" />
 
-          <button type="button">Submit Rating</button>
-        </div>
+        <label for="wok-rating">Rate this restaurant:</label>
+        <select id="wok-rating" name="wok-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <div class="restaurant-card">
+        <h4>Taqueria</h4>
+        <p>Come and try bowls, burritos, tacos, sides, and desserts.</p>
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFDAxq4cHBm1dfxCrDGS71byFW01tB-szBpf_ueHEJC5rbGSGS4Ip6QtRAfwNDzr63LAs9_ZdlvCSDp5X_Ab635APmyu-3FD8AL8hEdsGfZ5-0USFwUc8aIfXJRnHzfCP6gMS_wxFPueJPf=s1360-w1360-h1020-rw"
+             alt="Triton Grill at 64 Degree" class="dining-hall-image" />
+
+        <label for="taqueria-rating">Rate this restaurant:</label>
+        <select id="taqueria-rating" name="taqueria-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <div class="restaurant-card">
+        <h4>Garden Bar</h4>
+        <p>We have healthy and delicious salads, sandwiches, and soups here.</p>
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGJwAHw5uB1SbVkezxdKb1jGpehSItWBCq14j5YXXGOJPiIwbTys6Pi1MGwC9f8Z7jDA9K0EWPs-czfvnqtQ1u1XCoQFcSX7ei-gHwuu9RR1GNXLPYbexWqy42GpBrA9OaFhBvH=s1360-w1360-h1020-rw"
+             alt="Triton Grill at 64 Degree" class="dining-hall-image" />
+
+        <label for="garden-bar-rating">Rate this restaurant:</label>
+        <select id="garden-bar-rating" name="garden-bar-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <div class="restaurant-card">
+        <h4>Umi</h4>
+        <p>
+          You definitely cannot miss our best sushi rolls and bowls here. We also
+          offer special desserts here.
+        </p>
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGJBKOEPNWLawPqieAJuTx2iZ-zwLqK2reFnRK3WzMI6D1HNmfC-XxQUBr861J00tS-2jCkiPkeYMtbU2V9EvWegNu-OP6iO-teeIJMQy0PkI0GT6Y6yyh2QLtk30xSsehFdxSplQ=s1360-w1360-h1020-rw"
+             alt="Triton Grill at 64 Degree" class="dining-hall-image" />
+
+        <label for="umi-rating">Rate this restaurant:</label>
+        <select id="umi-rating" name="umi-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+
+        <button type="button">Submit Rating</button>
+      </div>
+
+      <div class="restaurant-card">
+        <h4>Al Dente</h4>
+        <p>We offer different flavors of pasta and spaghetti every week.</p>
+        <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAE0DAjSMOx0nVVJVEe6YGzjxZNSPf5vhf4Lm7oXt2-YdqndajFbCMagoo__G44iKNrmA7lE3-IkwMt9tD-i4h2jRQhFramP209ZaFUoT7AQAqTKJEVzIQtB4bbTFxMiFzJm7dQAww=s1360-w1360-h1020-rw"
+             alt="Triton Grill at 64 Degree" class="dining-hall-image" />
+
+        <label for="al-dente-rating">Rate this restaurant:</label>
+        <select id="al-dente-rating" name="al-dente-rating">
+          <option value="">Choose a rating</option>
+          <option value="5">5 - Excellent</option>
+          <option value="4">4 - Good</option>
+          <option value="3">3 - Okay</option>
+          <option value="2">2 - Not great</option>
+          <option value="1">1 - Poor</option>
+        </select>
+
+        <button type="button">Submit Rating</button>
       </div>
     </article>
 
