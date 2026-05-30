@@ -1291,38 +1291,43 @@
     <h2>Submit Your Food Rating</h2>
 
     <p>
-      Use this form to rate a dining hall or restaurant. This version is a
-      front-end demo, so the form will not save data unless you add JavaScript
-      or a backend later.
+      Share your experience at a UCSD dining hall or restaurant. Your review will
+      be saved to our database and displayed for other Tritons.
     </p>
 
-    <form>
-      <label for="dining-hall-choice">Rate this restaurant:</label>
-      <select id="dining-hall-choice" name="dining-hall-choice">
+    <form id="rating-form">
+      <label for="student-name">Your Name:</label>
+      <input
+        type="text"
+        id="student-name"
+        name="student-name"
+        placeholder="Your name"
+        required
+      />
+
+      <label for="dining-hall-choice">Dining Hall:</label>
+      <select id="dining-hall-choice" name="dining-hall-choice" required>
         <option value="">Choose a dining hall</option>
-        <option value="64-degrees">64 Degrees</option>
-        <option value="cafe-ventanas">Café Ventanas</option>
-        <option value="oceanview">OceanView</option>
-        <option value="foodworx">Foodworx</option>
-        <option value="the-bistro">The Bistro</option>
-        <option value="sixth-market">Sixth Market</option>
-        <option value="canyon-vista">Canyon Vista</option>
+        <option value="64 Degrees">64 Degrees</option>
+        <option value="Cafe Ventanas">Café Ventanas</option>
+        <option value="OceanView">OceanView</option>
+        <option value="Foodworx">Foodworx</option>
+        <option value="Seventh College Dining">Seventh College Dining</option>
+        <option value="Sixth Market">Sixth Market</option>
+        <option value="Canyon Vista">Canyon Vista</option>
       </select>
 
-      <br /><br />
-
-      <label for="restaurant-name">Rate this restaurant:</label>
+      <label for="restaurant-name">Restaurant / Food Item:</label>
       <input
         type="text"
         id="restaurant-name"
         name="restaurant-name"
-        placeholder="Example: Grill, Noodles, Cafe, Market"
+        placeholder="Example: Umi, Taqueria, Noodle, Bistro Sushi"
+        required
       />
 
-      <br /><br />
-
       <label for="overall-rating">Overall Rating:</label>
-      <select id="overall-rating" name="overall-rating">
+      <select id="overall-rating" name="overall-rating" required>
         <option value="">Choose a rating</option>
         <option value="5">5 - Excellent</option>
         <option value="4">4 - Good</option>
@@ -1331,40 +1336,38 @@
         <option value="1">1 - Poor</option>
       </select>
 
-      <br /><br />
-
-      <label for="review-text">Rate this restaurant:</label>
-      <br />
+      <label for="review-text">Review:</label>
       <textarea
         id="review-text"
         name="review-text"
         rows="5"
-        cols="40"
         placeholder="Write your thoughts about the food here..."
+        required
       ></textarea>
 
-      <br /><br />
-
       <button type="submit">Submit Review</button>
+      <p id="form-message"></p>
     </form>
   </section>
 
+  <!-- ================= RECENT REVIEWS SECTION ================= -->
+  <section id="recent-reviews">
+    <h2>Recent Reviews</h2>
+    <p>See the latest 10 reviews submitted by Tritons.</p>
+
+    <div id="recent-reviews-list"></div>
+  </section>
 
   <!-- ================= POPULAR DISHES / DATA SECTION ================= -->
   <section id="popular-dishes">
-    <h2>Popular Triton Picks</h2>
+    <h2>Top Rated Food</h2>
 
     <p>
-      Here are the current top picks from our team based on taste, value, and convenience.
+      These rankings are calculated from student reviews submitted to TritonEats.
     </p>
 
-    <ul id="top-picks-list">
-      <li>&#127869; Best Overall Dish: Sushi Roll @ Umi (64 Degrees)</li>
-      <li>&#11088; Highest Rated Restaurant: Taqueria (64 Degrees)</li>
-      <li>&#128205; Most Convenient Dining Hall: Canyon Vista Marketplace</li>
-    </ul>
+    <div id="top-picks-list"></div>
   </section>
-
 
   <!-- ================= ADDITIONAL RESOURCES ================= -->
   <section id="resources">
@@ -1384,7 +1387,7 @@
   <!-- ================= FOOTER ================= -->
   <footer>
     <p>
-      TritonEats &copy; 2026 &mdash; Team 5: Peilin Zhang, Miaofen Zhou, Sheila He, Fiona Feng, Jocelyn Chen
+      TritonEats &copy; 2026 &mdash; Team 5: Sheila He, Fiona Feng, Peilin Zhang, Miaofen Zhou, Jocelyn Chen
     </p>
   </footer>
 
@@ -1409,6 +1412,7 @@ function toggleHall(slug) {
   }
 }
 </script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="script.js" defer></script>
 </body>
 
