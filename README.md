@@ -6,7 +6,7 @@ TritonEats is a website designed to help students explore and navigate campus di
 ## Link to Website
 Check out our website here:
 
-** ✨[Launch TritonEats Website](https://gnnnnr.github.io/Team5-rateDinigHall/) **
+**✨[Launch TritonEats Website](https://gnnnnr.github.io/Team5-rateDinigHall/)**
 
 ## Key Files/Folders
 * 'index.html' - Core structure of the website. Contains HTML5 structure and includes component sections for each dining hall
